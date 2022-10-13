@@ -1,0 +1,97 @@
+<html><head><title>Skynet</title></head>
+<body>
+
+<h3>Skynet is here, now with features</h3>
+
+<img src="german.jpg"> <img src="american.jpg"><br><br>
+
+The first feature is to watch what ever the fuck you want. This page 
+will tell you how to setup FoxyProxy so you are able to do that. The 
+server is located in the United States so anything that is restricted by 
+country can use FoxyProxy also. In the future we want more servers in 
+more countries so everybody can do what ever the fuck they want. This is 
+only one server on a cable connection right now, so you might have to 
+pause the video to wait for it to load. <br><br>
+
+The first thing you need is the FireFox browser. <a href="http://www.mozilla.com/firefox/">
+Here is the link.</a> FoxyProxy is a plugin for FireFox, but you can 
+also use axecution with anything that accepts a SOCKS proxy (more on 
+that later if you don't know what I'm writing about).<br><br>
+
+You will need to download and run <a href="http://haanstra.eu/putty/download/putty.exe">PuTTY Tray</a>
+(<a href="http://haanstra.eu/putty/">the 
+webpage is here if you want more information)</a>. Read on to see what 
+to do with PuTTY.<br><br>
+
+The next thing is to install the FoxyProxy plugin and configure it. 
+<a href="https://addons.mozilla.org/en-US/firefox/addon/2464">You can 
+get it here.</a>
+
+<h4>Now to configure it...</h4>
+
+First we will configure PuTTY and then FireFox/FoxyProxy.<br><br>
+
+<table border=0>
+<tr><td>
+<img src="putty-host.jpg" align="left">
+In the main screen for PuTTY Tray type axecution.net for the Host Name. 
+Port 
+should be 22, but don't click open yet. You need to configure an SSH 
+tunnel first (this will let you use the proxy). Type a name under saved 
+sessions and click save if you want to use it later on.
+</td></tr>
+
+<tr><td>
+<img src="putty-config.jpg" align="left">
+First go to the Connection category and bring up SSH then click on 
+"Tunnels" (secret tunnel lopl). In "Source port" enter 9999 and click 
+"Dynamic" under destination, then click add. You can then go back to the 
+session category and click "Open" in the lower right.<br><br>
+Type in the user name and password on the flyer (sorry, but we have 
+limited bandwidth right now so not everybody can use axecution!). If you 
+can find another system to connect to with SSH though these same 
+instructions will work. When you type in your password it will look like 
+nothing is being typed in, so just keep typing it. In order for this to 
+work with YouTube the server would needs to be in a different country.
+</td></tr>
+
+<tr><td>
+<img src="fp-icon.jpg" align="left">
+Now lets move on to FoxyProxy. Once it is installed and FireFox has been 
+reset there will be a fox icon in the lower right hand corner, click on 
+that to bring up the FoxyProxy options.
+</td></tr>
+
+<tr><td>
+<img src="add-new.jpg" align="left">
+Click the add new button to add axecution to your proxy list.
+</td></tr>
+
+<tr><td>
+<img src="manual-config.jpg" align="left">
+Under Proxy Details set the Host or IP Address to "localhost" and the 
+port to 9999, and check the "SOCKS proxy?" option.
+</td></tr>
+
+<tr><td>
+<img src="add-new-pattern.jpg" align="left">
+Click over to URL Patterns and click on Add New Pattern. Name the new 
+pattern "YouTube." This pattern will make it so you will only use the 
+proxy while going to youtube. The URL pattern is "*.youtube.com/*" 
+Make sure the enable check mark is checked. Click OK.
+</td></tr>
+
+</table>
+
+You might need to restart FireFox for this to work, but you should now 
+be able to watch anything that's on YouTube now :D<br><br>
+
+If you're still wanting more you can install YouTube Enhancer. It lets 
+you download the videos as well as change the size of the videos. 
+Probably other stuff too. You will need to install <a href="https://addons.mozilla.org/en-US/firefox/addon/748">
+Greasemonkey</a> first, then <a href="https://userscripts.org/scripts/show/33042">
+YouTube Enhancer</a>. When you download video files with YouTube 
+Enhancer you can use <a href="http://winff.org/html_new/">WinFF</a> to 
+convert the video files into MP3s so you can listen to them with your 
+MP3 players.
+</body></html>
